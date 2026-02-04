@@ -1,0 +1,41 @@
+# Source files (publish only dist)
+src/
+tests/
+examples/
+coverage/
+
+# Config files
+babel.config.js
+tsconfig.json
+.eslintrc*
+.prettierrc*
+eslint.config.*
+jest.config.*
+vitest.config.*
+rollup.config.*
+vite.config.*
+
+# Docs 
+docs/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Cache
+.cache/

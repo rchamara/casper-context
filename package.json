@@ -1,0 +1,56 @@
+{
+  "name": "babel-plugin-casper-context",
+  "version": "0.1.0",
+  "description": "CasperContext - the friendly, invisible React Context API via Babel. Declare a variable, use it globally.",
+  "author": "Ruwan Chamara",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "babel-plugin",
+    "babel",
+    "react",
+    "react-context",
+    "global-state",
+    "casper-context",
+    "compiler",
+    "ast",
+    "transform",
+    "state-management"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourname/casper-context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourname/casper-context/issues"
+  },
+  "homepage": "https://github.com/yourname/casper-context#readme",
+  "scripts": {
+    "build": "babel src --out-dir dist --extensions .ts,.js",
+    "dev": "babel src --out-dir dist --extensions .ts,.js --watch",
+    "clean": "rm -rf dist",
+    "test": "node tests/run.js",
+    "lint": "eslint src --ext .ts,.js",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.0",
+    "@babel/core": "^7.25.0",
+    "@babel/parser": "^7.25.0",
+    "@babel/preset-env": "^7.25.0",
+    "@babel/preset-typescript": "^7.25.0",
+    "@babel/traverse": "^7.25.0",
+    "@babel/types": "^7.25.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^9.0.0",
+    "typescript": "^5.4.0"
+  }
+}
