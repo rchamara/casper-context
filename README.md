@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img width="400" src="./react-casper-context.png" alt="react casper context logo">
+  <img width="400" src="./casper-context.png" alt="react casper context logo">
   <br>
   <br>
 </p>
