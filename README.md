@@ -14,7 +14,6 @@
 <br><br>
 </p>
 <!--lint ignore-->
-
 Casper Context is a Babel compile-time plugin that transforms specially prefixed variables into fully functional React Context API state — automatically.
 
 No providers.
@@ -23,23 +22,22 @@ No complex setup.
 
 Just declare → use → update.
 
-
 ## ✨ Quick Example
 ### ✅ Declare Context Variable
 
 ```jsx
 function App() {
-  let _$_appMessage = ''
-  return (
-    <div className="App">
-      <div className="casper-wrapper">
-        <CasperHero />
-      </div>
 
-      <div className="message-wrapper">
-        <MessageBox />
-      </div>
-    </div>
+  let _$_appMessage = 'Say Hi to the Casper';
+
+  return (
+    <>
+
+      <CasperHero />
+
+      <MessageBox />
+
+    </>
   );
 }
 ```
@@ -48,7 +46,9 @@ function App() {
 
 ```jsx
 export default function CasperHero() {
+
   return <h1>{_$_appMessage}</h1>;
+
 }
 
 ```
@@ -61,12 +61,14 @@ export default function MessageBox() {
   const handleChange = () => {
     _$_appMessage = 'Hi Casper';
   } 
-  
+
   return (
-    <div>
+    <>
+
         <button onClick={handleChange}>
             Change
         </button>
-    </div>;
+
+    </>;
 }
 ```
