@@ -10,7 +10,7 @@
 <h1 align='center'>React Casper Context</h1>
 
 <p align='center'>
-    🚀 Easy React Context – Compile-Time Magic with Casper Context</a>
+    <h3>🚀 Declare it like a normal JavaScript variable. Use it anywhere like React Context.</h3>
 <br><br>
 </p>
 
